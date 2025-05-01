@@ -1,0 +1,215 @@
+
+button {
+  cursor: pointer;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.container {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 42px;
+  align-items: center;
+}
+
+
+.todohero_section {
+  border: 1px solid #c2b39a;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-self: center;
+  width: 90%;
+  max-width: 455px;
+  padding: 12px;
+  border-radius: 11px;
+  font-size: 35px;
+}
+.todohero_circle {
+  background-color: #88ab33;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 20px;
+}
+.form {
+  align-self: center;
+  max-width: 455px;
+  position: relative;
+  align-items: center;
+  margin-top: 38px;
+}
+.form label {
+  width: 90%;
+}
+.form input {
+  background-color: #1f2937;
+  color: #fff;
+  width: 95%;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 11px;
+  padding: 12px;
+  padding-right: 50px;
+}
+.form button {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #88ab33;
+  border: none;
+  padding-top: 3.5px;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%)
+}
+
+.plusIcon {
+  height: 33px;
+  width: 33px;
+  align-items: center;
+}
+
+.todo_list {
+  align-self: center;
+  max-width: 455px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  gap: 27px;
+}
+
+.todo_item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  max-width: 455px; 
+  border: 1px solid #c2b39a;
+  font-size: 16px;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 12px;
+  border-radius: 11px;
+}
+
+.todo_items_left,
+.todo_items_right {
+  display: flex;
+  align-items: center;
+}
+.todo_items_left {
+  background-color: transparent;
+  border: none;
+  color: #e0e0e0;
+  gap: 12px;
+  font-size: 16px;
+}
+.todo_items_left svg {
+  width: 23px;
+  height: 24px;
+  stroke: #8bc34a;
+}
+
+.todo_items_right {
+  gap: 4px;
+}
+.todo_items_right button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+
+.edit-form input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  max-width: 455px;
+  border: 1px solid #c2b39a;
+  font-size: 16px;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 12px;
+}
+
+.edit-form input {
+  outline: transparent;
+  width: calc(100% - 14px);
+  height: calc(100% - 12px);
+  border: transparent;
+}
+.header_container{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+@media (max-width: 700px) {
+  .todohero_section {
+    font-size: 25px;
+  }
+  .todohero_circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 34px;
+    margin-left: 10px;
+  }
+ .header_container{
+  margin: 0 auto;
+  
+  
+
+ }
+}
+@media (max-width: 500px) {
+  .todohero_section {
+    font-size: 20px;
+  }
+  .todohero_circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    font-size: 25px;
+    margin-left: 10px;
+  }
+
+}
+@media (max-width: 400px) {
+  .todohero_section {
+    font-size: 16px;
+  }
+  .todohero_circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+}
